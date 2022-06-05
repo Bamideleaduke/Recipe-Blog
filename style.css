@@ -1,0 +1,250 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Playfair+Display:wght@400;600;700;800;900&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+width: 90%;
+margin: 3% auto;
+}
+.title{
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 31px;
+}
+.elipsis{
+    display: flex;
+}
+.elipsis p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 16px;
+}
+span{
+    margin-right: 0.5rem;
+}
+.banner{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.bg-img {
+    height: 213.83px;
+    width: 100%;
+    background: url(./asset/photo1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+/* card */
+.cutlery .utensil{
+    width: 15px;
+    height: 12px;
+
+}
+.cutlery, .yield span{
+    color: #f2994A;
+
+}
+.yield span, .prep-info span{
+    display: block;
+    font-size: 0.6rem;
+}
+.cutlery, .timer{
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+}
+.yield, .prep-info{
+    color: #bdbdbd;
+    font-size: 0.5rem;
+    
+}
+.servings, .preparation{
+    display: flex;
+}
+.prep-info span{
+    color: #000;
+    font-weight: 500;
+}
+.inner-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+/* card */
+/* Main */
+.recipe{
+    width: 95%;
+    margin: 1% auto;
+    line-height: 27px;
+    text-align: justify;
+    
+}
+.one h4, h5, .two h5, .three h4{
+    font-family: 'Playfair Display', serif;
+}
+.one h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.one h5, .two h5{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0.7rem 0;
+}
+.one .recipe-guide, .two .recipe-guide{
+    list-style-type: none;
+   
+    padding-left: 1rem;
+}
+.one li, .two li{
+    font-weight: 400;
+    margin: 0.4rem 0;
+}
+.one li::before, .two li::before{
+    content: "";
+    border: 2px solid #828282;
+    border-radius: 2px;
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-top: -1rem;  
+    margin-right: 0.5rem;  
+    margin-left: -1rem;
+} 
+.one, .two{
+    margin-bottom: 2rem;
+}
+
+.three h4{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 2rem 0;
+
+}
+.three .recipe-guide{
+    list-style-type:none;
+    counter-reset: li;
+}
+.three li{
+    counter-increment: li;
+    margin-bottom: 0.4rem;
+    font-weight: 400;
+    padding-left: 1.5rem;
+
+}
+.three li::before{
+    content: counter(li);
+    background-color: #f2994A;
+    width: 3rem;
+    padding: 0.2rem 0.5rem 00.2rem 0.5rem;
+    margin-top: -1rem;  
+    margin-right: 0.5rem;  
+    margin-left: -2rem;
+}
+
+footer h6{
+    color: #82828241;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+footer p{
+    margin: 4rem 0 2rem;
+    color: #828282;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* Main */
+
+@media only screen and (min-width:768px) {
+    .title{
+        font-size: 2rem;
+    }
+    .elipsis p{
+        width: 408px;
+    }
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .card{
+        flex-basis: 30%;
+        padding-left:2rem ;
+        padding-top: 3rem;
+        box-shadow: 0 0 7px 0 #828282;
+        height: 270px;
+        border-radius: 15px;
+        
+    }
+   
+
+    .inner-card{
+        flex-direction: column;
+        margin: 1.5rem 0;
+        padding-bottom: 2rem;
+        
+    }
+    .banner{
+        width: 100%;
+        padding-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .bg-img {
+        height: 400px;
+        background-size: cover;
+       
+    }
+    .preparation{
+        margin-bottom: 0.7rem;
+    }
+     .prep-info span{
+        display: block;
+        font-size: 0.8rem;
+    }
+    .cutlery, .timer{
+        font-size: 1rem;
+        padding-top: 0.3rem;
+    }
+    .yield, .prep-info{
+        color: #bdbdbd;
+        font-size: 0.6rem; 
+    }
+    .yield span{
+        font-size: 0.8rem;
+        
+    }
+}
+@media only screen and (min-width:1100px) {
+    .title{
+        font-size: 2rem;
+    }
+    .banner{
+        width: 100%;
+        padding-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .bg-img {
+        height: 500px;
+        background-size: cover;
+       
+    }
+}
